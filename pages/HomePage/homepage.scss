@@ -1,0 +1,64 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/variables' as *;
+
+
+@keyframes test {
+    from {background-position: 0% 50%;}
+    to {background-position: 100% 50%;}
+}
+
+.animated-background {
+    background: url('../../assets/images/black-carbon-fiber-35yxtk8m3ebo7623.jpg');
+    background-size: cover;
+    animation: test 10s infinite alternate;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero {
+    @include flexSpaceBetweenRow;
+    padding-left: 1.5rem;
+    height: 90vh;
+
+    &__header{
+        color: $bone;
+        margin-bottom: 0;
+    }
+    &__sub-header{
+        color: $ash;
+        margin-top: 0;
+    }
+    &__text{
+        color: $bone;
+    }
+    &__button-container{
+        @include flexSpaceEvenlyRow;
+        justify-content: flex-start;
+    }
+    &__main{
+        width: 50%;
+    }
+    &__img-container{
+        height: 100%;
+    }
+    &__img{
+        height: 100%;
+    }
+}
+
+@include tabletMode{
+    .hero{
+        &__main{
+            width: 45%;
+        }
+    }
+}
+
+@include desktopMode{
+    .hero{
+        &__main{
+            width: 38%;
+        }
+    }
+}
