@@ -43,16 +43,7 @@
     }
 }
 
-.card {
-    opacity: 0;
-    transform:  translateX(-100%);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
 
-.card.visible{
-    opacity: 1;
-    transform: translateX(0);
-}
 
 @include tabletMode{
     .project-card{
@@ -78,5 +69,15 @@
         &__tech-icon-list{
             @include flexCenterRow;
         }
+    }
+    .card {
+        opacity: 0;
+        transform:  translateX(-100%);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+    
+    .card.visible{
+        opacity: 1;
+        transform: translateX(0);
     }
 }

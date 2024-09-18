@@ -1,6 +1,6 @@
 import './header.scss';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../../assets/images/logo.png'
 
 const Header: React.FC = () => {
@@ -13,19 +13,19 @@ const Header: React.FC = () => {
             <div className='nav-bar__list-container'>
                 <ul className='nav-bar__list'>
                     <li className='nav-bar__list-item'>
-                        <Link to={"/"}>About</Link>
+                        <Link smooth to="#about">About</Link>
                     </li>
                         
                     <li className='nav-bar__list-item'>
-                        <Link to={"/"}>Skills</Link>
+                        <Link smooth to="#about">Skills</Link>
                     </li>
                         
                     <li className='nav-bar__list-item'>
-                        <Link to={"/"}>Projects</Link>
+                        <Link smooth to="#projects">Projects</Link>
                     </li>
                             
                     <li className='nav-bar__list-item'>
-                        <Link to={"/"}>Contact</Link>
+                        <Link smooth to="#contact">Contact</Link>
                     </li>             
                 </ul>
             </div>
