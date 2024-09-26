@@ -52,7 +52,7 @@ const About: React.FC = () =>{
                             <ul className="about__list">
                                 <li>Worked with clients in various industries.</li>
                                 <li>Delivered high-quality, responsive websites.</li>
-                                <li>Created wireframes, mockups, and prototypes to visualize website designs.</li>
+                                <li>Created wireframes, mock-ups, and prototypes to visualize website designs.</li>
                                 <li>Integrated back-end services and APIs to enhance website functionality.</li>
                             </ul>
                         </div>
