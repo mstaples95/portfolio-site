@@ -16,16 +16,16 @@ const Footer: React.FC = () => {
             <div className="footer__social-link-container">
                 <ul className="footer__social-link-list">
                     <li className="footer__social-list-item">
-                        <Link to ="/"> <img className="footer__social-img" src={GithubLogo} alt="Github Link"/> </Link>
+                        <Link to ="https://github.com/mstaples95"> <img className="footer__social-img" src={GithubLogo} alt="Github Link"/> </Link>
                     </li>
                     <li className="footer__social-list-item">
-                        <Link to ="/"> <img className="footer__social-img" src={LinkedInLogo} alt="Github Link"/> </Link>
+                        <Link to ="https://www.linkedin.com/in/matthew-a-staples/"> <img className="footer__social-img" src={LinkedInLogo} alt="LinkedIn Link"/> </Link>
                     </li>
                     <li className="footer__social-list-item">
-                        <Link to ="/"> <img className="footer__social-img" src={InstagramLogo} alt="Github Link"/> </Link>
+                        <Link to ="https://www.instagram.com/matthew_staples95/"> <img className="footer__social-img" src={InstagramLogo} alt="Instagram Link"/> </Link>
                     </li>
                     <li className="footer__social-list-item">
-                        <Link to ="/"> <img className="footer__social-img" src={TwitterLogo} alt="Github Link"/> </Link>
+                        <Link to ="https://twitter.com/skooma_1"> <img className="footer__social-img" src={TwitterLogo} alt="Twitter Link"/> </Link>
                     </li>
                 </ul>
             </div>

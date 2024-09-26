@@ -42,8 +42,8 @@ const About: React.FC = () =>{
             <div className="about__text-content">
                 <div className="about__left">
                     <div className="about__main-text">
-                        <p>
-                            I'm a skilled freelance web developer with 2 years of experience in the industry. I specialize in building modern, responsive, and user-friendly websites and web applications using the latest front-end technologies.
+                        <p className="about__sub-text">
+                        I'm Matthew Staples, a Toronto-based Full Stack Developer with a passion for crafting software solutions that improve lives and solve real-world problems. With experience in both front-end and back-end development, I bring a strong skill set in React, Node.js, MySQL, and more, complemented by a background in UI design. My work spans personal projects like GoGoGrocery and Street Fighter DB, where I led development and design, to collaborative industry projects such as a wealth management app prototype. I'm driven by the transformative potential of technology and committed to building scalable, impactful applications.
                         </p>
                     </div>
                     <div className="about__subheading">

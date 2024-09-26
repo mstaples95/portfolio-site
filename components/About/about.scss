@@ -32,6 +32,14 @@
         @include flexSpaceBetweenRow;
         
     }
+
+    &__sub-text{
+        background-color: $dark-purple;
+        border-radius: 10px;
+        padding: 1rem;
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5); 
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+    }
     &__tech{
         max-width: 1280px;
         margin: auto;
@@ -42,6 +50,8 @@
         border-radius: 10px;
         padding: 1rem;
         flex-wrap: wrap;
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5); 
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
     }
     &__list{
         list-style: inside;

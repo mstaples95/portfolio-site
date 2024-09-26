@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './homepage.scss'
+import Spline from '@splinetool/react-spline';
 import ButtonMedium from "../../components/Button-Medium/Button-Medium";
 import mobileImg from "../../assets/images/mobilebg3.png"
 import tabletImg from "../../assets/images/tabletbg5.png"
@@ -40,7 +41,8 @@ const HomePage: React.FC = () => {
 
     <>
         <div className="hero animated-background">
-                <div className="hero__main">
+            <Spline className="spline-background" scene="https://prod.spline.design/uORpzMX5tfL0sDcn/scene.splinecode" />
+                <div className="hero__main">                   
                     <div className="hero__text-content">
                         <h1 className="hero__header">Matthew Staples</h1>
                         <h2 className="hero__sub-header">Freelance Web Developer</h2>
