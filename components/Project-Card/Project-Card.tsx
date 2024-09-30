@@ -13,9 +13,10 @@ interface CardProps {
     techIcon4: string;
     techIcon5: string;
     repoUrl: string;
+    siteUrl: string;
     }
 
-const ProjectCard: React.FC<CardProps> = ({title, description, imgUrl ,techIcon1, techIcon2, techIcon3, techIcon4, techIcon5, repoUrl}) => {
+const ProjectCard: React.FC<CardProps> = ({title, description, imgUrl ,techIcon1, techIcon2, techIcon3, techIcon4, techIcon5, repoUrl, siteUrl}) => {
     
     const { ref, inView} = useInView({
         triggerOnce: true,
@@ -24,6 +25,10 @@ const ProjectCard: React.FC<CardProps> = ({title, description, imgUrl ,techIcon1
     
     const handleRepoClick = () => {
         window.open(repoUrl, '_blank');
+    }
+
+    const handleSiteClick = () => {
+        window.open(siteUrl, '_blank');
     }
 
     return (
@@ -45,6 +50,7 @@ const ProjectCard: React.FC<CardProps> = ({title, description, imgUrl ,techIcon1
 
                <div className="project-card__button-container">
                     <ButtonMedium onClick={handleRepoClick} title="View Repo" textColor="#02010a" backgroundColor="#674188" hoverBackgroundColor="#140152" hoverTextColor="white" activeBackgroundColor="black"/>
+                    <ButtonMedium onClick={handleSiteClick} title="Visit Site" textColor="#02010a" backgroundColor="#674188" hoverBackgroundColor="#140152" hoverTextColor="white" activeBackgroundColor="black"/>
                 </div> 
             </div>
             
