@@ -8,7 +8,7 @@ import desktopImg from "../../assets/images/desktopunion.png"
 import Featured from "../../components/Featured/Featured";
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
-
+//
 const HomePage: React.FC = () => {
     const [heroImg, setHeroImg] = useState(mobileImg);
 
