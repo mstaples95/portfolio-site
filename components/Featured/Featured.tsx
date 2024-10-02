@@ -16,7 +16,7 @@ import mysqlIcon from "../../assets/icons/icons8-mysql-50.png";
 import sassIcon from "../../assets/icons/icons8-sass-50.png";
 import restIcon from "../../assets/icons/icons8-rest-api-50.png";
 import wpIcon from "../../assets/icons/icons8-wordpress-50.png";
-
+//
 
 const Featured: React.FC = () =>{
     return (
